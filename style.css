@@ -1,0 +1,46 @@
+:root{
+    --bg : #ffffff;
+    --bg1 : #1c3dd5;
+    --bg2 : #ff006e;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.card-member div {
+    width : 350px;
+    height : 350px;
+    border-radius: 10px;
+    background: linear-gradient(var(--bg1),var(--bg2));
+    margin-bottom: 20px;
+}
+.card-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.card-member h2{
+    color: aliceblue;
+}
+.card-member p{
+    color: aliceblue;
+    margin : 0 30px;
+}
+.card-member button{  
+    justify-content: center;
+    margin: 0 30px 12px;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 12px;
+}

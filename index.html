@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>CI/CD Test</title>
-  <style>
-    body {
-      color: #ffffff;
-      background-color: #0188cc;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
-    h1 {
-          font-size: 500%;
-          font-weight: normal;
-          margin-bottom: 0;
-      }
-    
-    h2{
-      font-size: 200%;
-      font-weight: normal;
-      margin-bottom: 0;
-    }
-  </style>
+    <meta charset="utf-8">
+    <title>CI/CD: Profile CV</title>
+    <!--<meta name="viewport" content="with=device-with, " />-->
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div align="center">
-        <h1>Xin chào</h1>
-        <h2>Các bạn đã deploy thành công</h2>
-        <button type="button" onclick="alert('Xin Chào')">Nút bấm</button>
-    </div>
+    <div class="container">
+        <div class="title-cv">
+            <h1 >Nhóm 4</h1>
+            <h3 >Gồm các thành viên</h3>
+        </div>
+        <div class="card-member">
+            <div>
+                <img src="img/anh-nguyen-cong-huy.jpg" alt="" />
+                <h2>Nguyễn Công Huy</h2>
+                <p>1911548384</p>
+                <p>19BITV01</p>
+                <form method="get" action="/host/cvconghuy.html">
+                    <button type="submit">Xem CV</button>
+                </form>
+            </div>
+            <div>
+                <img src="img/anh-le-thanh-co.jpg" alt="" />
+                <h2>Lê Thành Cơ</h2>
+                <p>1911548384</p>
+                <p>19BITV01</p>
+                <form method="get" action="/host/cvconghuy.html">
+                    <button type="submit">Continue</button>
+                </form>
+            </div>
+        </div>
+    </div> 
+    
 </body>
 </html>
