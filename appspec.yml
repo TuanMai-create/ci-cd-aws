@@ -1,9 +1,11 @@
-version: 0.0
+﻿version: 0.0
 os: linux
-files:
+files: #đường dẫn chạy file mặc định
   - source: /index.html
     destination: /var/www/html/
-hooks:
+hooks: #script để thực hiện deploy code
+
+#script cài packet
   BeforeInstall:
     - location: scripts/install_dependencies 
       timeout: 300
