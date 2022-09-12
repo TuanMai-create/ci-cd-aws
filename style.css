@@ -27,6 +27,15 @@ body{
     border: 5px solid #ffffff;
     margin: 20px auto;
     cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+.card-member img:hover{
+    width: 350px;
+    height: 350px;
+    margin: 0;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
 }
 .card-member h2{
     color: aliceblue;
