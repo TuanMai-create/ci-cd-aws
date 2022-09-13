@@ -5,23 +5,183 @@
     <title>CI/CD: Profile CV</title>
     <meta http-equiv="X-UA-Compatitable" content="IE=edge">
     <meta name="viewport" content="with=device-with, initial-scale=1.0" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css"/>
-<style>
+    <!--------css------->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            background-color: powderblue;
+            height: 100vh;
+            background-color: bisque;
+            justify-content: center;
+            align-items: center;
         }
 
-        h1 {
+        .container {
+        }
+
+        h2 {
             color: blue;
+            text-align: center;
         }
 
-</style>
+        .card {
+            background-color: black;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            float: left;
+            margin: 20px 40px;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            object-position: center;
+        }
+
+        .card_img {
+            width: 120px;
+            height: 120px;
+            border: 4px solid red;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 10px auto;
+        }
+
+        h5 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100px;
+            height: 40px;
+            border: 1px solid #f2726a;
+            background: black;
+            color: white;
+            border-radius: 10px;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+            input:hover {
+                background: #f2726a;
+            }
+
+        .cv {
+            display: none;
+        }
+
+        .img_cv {
+            width: 500px;
+            height: 500px;
+            margin: 20px 500px;
+        }
+    </style>
+
+
 </head>
 <body>
-        <h1>Xin chào css</h1>
-    <h2>test màu đỏ conect vs css</h2>
-<img src="https://media.discordapp.net/attachments/846541336668012555/1019210071030366208/unknown.png" alt="hình">
+    <div class="container">
+        <h2>Thành Viên Nhóm</h2>
+        <!--------card------->
+        <div class="card">
+            <div class="card_img">
+                <img src="https://avatars.githubusercontent.com/u/63390496?v=4" alt="" />
+            </div>
+            <h3>Nguyễn Công Huy</h3>
+            <h5>19BITV01</h5>
+            <h5>1911548384</h5>
+            <input type="button" id="btn1" value="Ẩn CV" />
+            <input type="button" id="btn2" value="Hiện CV" />
+        </div>
+
+        <div class="card">
+            <div class="card_img">
+                <img src="https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/287175694_710240896852870_2950324587641919090_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=tvdhBXUqwQIAX8xMWmS&_nc_ht=scontent.fsgn16-1.fna&oh=00_AT8BUZj41Pi4RZRKCFdOdH8ltpvJuQN6cX0eLz3xa5kgkQ&oe=63259CDA" alt="" />
+            </div>
+            <h3>Lê Thành Cơ</h3>
+            <h5>19BITV01</h5>
+            <h5>1900007999</h5>
+            <input type="button" id="btn3" value="Ẩn CV" />
+            <input type="button" id="btn4" value="Hiện CV" />
+        </div>
+        <div class="card">
+            <div class="card_img">
+                <img src="https://scontent.fsgn16-1.fna.fbcdn.net/v/t1.6435-9/71469543_2441830666089482_8477590754481405952_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_ohc=GrBF7PWd7roAX_qhlAA&_nc_ht=scontent.fsgn16-1.fna&oh=00_AT89VLlzEhIc3bbX-bTR460i7GdLXF42DM23NeNOZ9Hazg&oe=63480B0D" alt="" />
+            </div>
+            <h3>Bùi Duy Cương</h3>
+            <h5>19BITV01</h5>
+            <h5>1911547215</h5>
+            <input type="button" id="btn5" value="Ẩn CV" />
+            <input type="button" id="btn6" value="Hiện CV" />
+        </div>
+        <div class="card">
+            <div class="card_img">
+                <img src="https://scontent.fsgn16-1.fna.fbcdn.net/v/t1.6435-9/66833450_2352632158310835_5967675269006229504_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_ohc=PZfsxj4yXfAAX9_mcgm&_nc_ht=scontent.fsgn16-1.fna&oh=00_AT-NS2kHTqo4dVsRRYtozgrzayYumUhihHHaqKHn9o0DPw&oe=634525BF" alt="" />
+            </div>
+            <h3>Nguyễn Thị Thúy Vy</h3>
+            <h5>19BITV02</h5>
+            <h5>1911548481</h5>
+            <input type="button" id="btn7" value="Ẩn CV" />
+            <input type="button" id="btn8" value="Hiện CV" />
+        </div>
+        <div class="card">
+            <div class="card_img">
+                <img src="https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/302551534_816774539342519_7000458456490982363_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=c0kMiZFmKWQAX-IGkJj&_nc_ht=scontent.fsgn16-1.fna&oh=00_AT8ux4hxHLJtUlG8rpOjIM-ZWy8JxXb4HhzWMxDv3sC9Tw&oe=63253C59" alt="" />
+            </div>
+            <h3>Phan Thanh Thiên</h3>
+            <h5>19BITV01</h5>
+            <h5>1900009380</h5>
+            <input type="button" id="btn9" value="Ẩn CV" />
+            <input type="button" id="btn10" value="Hiện CV" />
+        </div>
+        <div class="card">
+            <div class="card_img">
+                <img src="https://scontent.fsgn16-1.fna.fbcdn.net/v/t1.6435-9/64877477_2303164886592218_6645685794264580096_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0debeb&_nc_ohc=h5_yDdahruUAX8t8bPs&tn=uq5WHdU0G6Mv2cvq&_nc_ht=scontent.fsgn16-1.fna&oh=00_AT8ahp-8kHRp5qhs0RF4FxziRNwQmT6p8V0uZHi8lXREmA&oe=6345C710" alt="" />
+            </div>
+            <h3>Nguyễn Thiên Tuấn Mai</h3>
+            <h5>19BITV01</h5>
+            <h5>1911547105</h5>
+            <input type="button" id="btn11" value="Ẩn CV" />
+            <input type="button" id="btn12" value="Hiện CV" />
+        </div>
+        <!--------cv------->
+        <div class="cv" id="cv-nguyenconghuy">
+            <img class="img_cv" src="https://cdn.123job.vn/123job//uploads/images/cv/cv-ky-su-dien.png" alt="" />
+        </div>
+        <div class="cv" id="cv-lethanhco">
+            <p>cv của lê thành cơ nè</p>
+        </div>
+
+
+        <!-------js-------->
+        <script language="javascript">
+
+            document.getElementById("btn1").onclick = function () {
+                document.getElementById("cv-nguyenconghuy").style.display = 'none';
+            };
+            document.getElementById("btn2").onclick = function () {
+                document.getElementById("cv-nguyenconghuy").style.display = 'block';
+            };
+            document.getElementById("btn3").onclick = function () {
+                document.getElementById("cv-lethanhco").style.display = 'none';
+            };
+            document.getElementById("btn4").onclick = function () {
+                document.getElementById("cv-lethanhco").style.display = 'block';
+            };
+
+        </script>
+
+
+
+    </div>
 </body>
 
 
