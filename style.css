@@ -1,55 +1,73 @@
-:root{
-    --bg : #ffffff;
-    --bg1 : #1c3dd5;
-    --bg2 : #ff006e;
-}
-*{
+* {
     margin: 0;
     padding: 0;
-}
-body{
-    display: flex;
-    justify-content: center;
-    text-align: center;
     
 }
-.card-member div {
-    width : 350px;
-    height : 350px;
-    border-radius: 10px;
-    background: linear-gradient(var(--bg1),var(--bg2));
-    margin-bottom: 20px;
-}
-.card-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #ffffff;
-    margin: 20px auto;
-    cursor: pointer;
-    position: relative;
-    transition: 0.5s;
-}
-.card-member img:hover{
-    width: 350px;
-    height: 350px;
-    margin: 0;
-    border: 5px solid #ffffff;
-    border-radius: 10px;
-}
-.card-member h2{
-    color: aliceblue;
-}
-.card-member p{
-    color: aliceblue;
-    margin : 0 30px;
-}
-.card-member button{  
+.form-container{
+    min-height: 100vh;
+    background-color: rgb(177, 246, 255);
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 0 30px 12px;
-    width: 150px;
-    height: 35px;
+    padding: 20;
+}
+
+.form-container form{
+    padding: 20px;
+    background-color: azure;
+    text-align: center;
+    width: 500px;
+    border-radius: 15px;
+}
+
+.form-container form .box{
+    width: 90%;
     border-radius: 5px;
+    padding: 12px 14px;
+    font-size: 16px;
+    color: black;
+    margin: 10px 0 ;
+}
+
+.form-container form h3{
+    font-size: 25px;
+}
+
+.btn{
+    width: 95%;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: black;
+    display: block;
+    text-align: center;
     cursor: pointer;
-    margin-top: 12px;
+    font-size: 16px;
+    margin-left: 10px; 
+}
+.btn{
+    background-color: aquamarine;
+}
+.btn:hover{
+    background-color: aqua;
+}
+
+.form-container form p{
+    margin-top: 15px;
+    font-size: 16px;
+    color: black;
+}
+
+.form-container form a{
+    color: blue;
+}
+
+.message{
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-size: 16px;
 }
